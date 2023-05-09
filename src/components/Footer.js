@@ -78,8 +78,8 @@ const Footer = () => {
         </div>
         </div>
     </footer> */}
-    <div className='apstoreplaystore col-lg-12'>
-        <div className=' col-lg-6'>
+    <div className='apstoreplaystore col-lg-12 row'>
+        <div className=' col-md-6'>
         <h2>Travel with the World of Hyatt App.</h2>
         <p>We're bringing flexibility and peace of mind to your stay, with digital amenities that can help put you in control of how you connect with us. Discover the below amenities via the World of Hyatt app, available at Grand Hyatt Seattle:</p>
         <button className='btn learnmore'>LearnMore</button>
@@ -90,7 +90,7 @@ const Footer = () => {
 </span>
         </div>
         </div>
-        <div className='col-lg-6'>
+        <div className='col-md-6'>
         <img src="images\Grand-Hyatt-Seattle-P128-Exterior.4x3.png" alt="" />
         </div>
     </div>

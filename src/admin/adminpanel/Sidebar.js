@@ -1,6 +1,10 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, Route, Routes } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import Addrooms from '../adminpages/Addrooms'
+import Showrooms from '../adminpages/Showrooms'
+import Addemployee from '../adminpages/Addemployee'
+import Showemployee from '../adminpages/Showemployee'
 const Sidebar = () => {
   const navigation=useNavigate()
   const adminemail = sessionStorage.getItem("user_email");
@@ -26,7 +30,18 @@ const Sidebar = () => {
         </ul>
       </div>
 <div className='sidbardata col-lg-9'>
-<Outlet/>
+         <Routes>
+            <Route path='/addrooms' element={<Addrooms/>}/>
+          </Routes>
+          <Routes>
+            <Route path='/showrooms' element={<Showrooms/>}/>
+          </Routes>
+          <Routes>
+            <Route path='/addemployee' element={<Addemployee/>}/>
+          </Routes>
+          <Routes>
+            <Route path='/showemployee' element={<Showemployee/>}/>
+          </Routes>
 </div>
     </div>
     </div>

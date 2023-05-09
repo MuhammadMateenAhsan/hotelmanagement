@@ -25,7 +25,7 @@ background-color: rgb(170, 13, 13);
   
   
 .signuplogin{
-    margin-left: 4%;
+    margin-left: 20%;
         display: flex;
         max-width: 13%;
         text-align: center;
@@ -44,7 +44,7 @@ padding: 15px;
 }
 .adminlogin{
         display: flex;
-        margin-left: 8px;
+        margin-left: 58px;
         max-width: auto;
         text-align: center;
         justify-content: center;
@@ -388,7 +388,9 @@ video {
     color: #fff;   
 }
 .navbar{
-    height: 18vh;
+    min-height: 18vh;
+    max-height: auto;
+    z-index: -1;
     width: 100%;
     position: fixed;
   top: 0;
@@ -406,11 +408,6 @@ video {
     margin-left: 30px;
 }
 .nav-link{
-    
-    /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  min-height: 50px;
   max-height: auto;
   min-width: 100px;
   max-width: auto;
@@ -427,14 +424,13 @@ video {
   -webkit-text-fill-color: transparent;
 }
 .navbar li :hover{
-    font-size: 18px;
+    /* font-size: 18px; */
     color: rgb(30, 27, 27);
     /* background-color: rgba(11, 5, 5, 0.202); */
 }
 .nav-item{
     border: 1px solid black;
-    background-color: rgba(249, 249, 255, 0.202);;
-   
+    background-color: rgba(249, 249, 255, 0.202);
 }
 /* accomodation_sec styling start */
 
@@ -556,7 +552,8 @@ width: 98.7vw;
 
 }
 .roomsplussuites_div1{
-    height: 60vh;
+    min-height: 60vh;
+    max-height: auto;
     text-align: start;
 display: flex;
 }
@@ -584,11 +581,12 @@ width: 38.7%;
 }
 .div2_1 img{
    height: 80vh;
-   width: 20vw;
-   margin-top: 20%;
+   width: 77%;
+   margin-top: 5%;
+   margin-right:15% ;
     }
 .div2_2 img{
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     margin-left: -30%;
     margin-top: -10%;
@@ -597,7 +595,8 @@ width: 38.7%;
 /* ourhotel styling start from here */
 
 .ourhotel{
-    height: 50vh;
+    min-height: 50vh;
+    max-height: auto;
     background-color: #fff;
     width: 100%;
     margin-top: 89%;
@@ -710,13 +709,13 @@ color: red;
 .apstoreplaystore{
     display: flex;
     /* set your min height and set max height to auto it will auto adjust your content in div */
-    min-height: 50vh;
+    min-height: 70vh;
     max-height: auto;
     text-align: start;
     padding-left: 60px;
     padding-right: 0px;
     padding-top: 40px;
-    min-width: 100%;
+    min-width: 100.93%;
     max-width: auto;
     overflow: hidden;
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
@@ -814,6 +813,7 @@ margin-left: 15px;
     background-color: #1e1818;
     color: #fff;
     align-items: center;
+    width: 100%;
     padding-top: 20px;
     font-size: 13px;
     text-align: center;
@@ -985,7 +985,7 @@ padding: 0%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
    width: auto;
-   margin-left: -18px;
+   margin-left: -22px;
    margin-top: 3px;
   }
   
@@ -1012,8 +1012,8 @@ main{
 .sidebar{
     background: #000;
     color: #fff;
-    height: 100vh;
-    width: 100%;
+    /* height: 100vh; */
+    /* width: 100%; */
     transition: all 0.5s;
 }
 .top_section{
@@ -1108,4 +1108,20 @@ margin-top: 10px;
 text-decoration: none;
 color: white;
   }
- 
+ .roomdetail{
+    display: flex;
+    padding: 50px;
+ }
+ .slectbtn{
+    color: green;
+ }
+ .slectbtn a{
+    text-decoration: none;
+    color: white;
+ }
+ .slectbtn a:hover{
+    color: white;
+ }
+ .logoutbtn{
+    margin-right: 40%;
+ }

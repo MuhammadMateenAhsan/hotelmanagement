@@ -33,7 +33,6 @@ useEffect(()=>{
     }
     setExpanded(!expanded);
   }
-
   return (
     <div className="mt-5 ">
       <div className="roomimg">
@@ -111,9 +110,15 @@ useEffect(()=>{
     </a>
   </div>
   <div className="col-lg-3 carouselbtn">
-    <h3>{api.price}</h3>
+    <h3>${api.price}</h3>
     <p>Avg/Night (USD)</p>
-    <button className="btn sellectbtn" style={{backgroundColor:"orange"}} onClick={handleButtonClick}>SELLECT</button>
+   {
+    sessionStorage.getItem("user_id") == null ? (
+      <button className="btn sellectbtn" style={{backgroundColor:"orange"}} onClick={handleButtonClick}>SELLECT</button>
+    ):(
+      <button className="btn btn-warning slectbtn"><Link to={"/roomdetails"}>SELLECT</Link></button>
+    )
+   }
   </div>
 </div>
 
@@ -127,8 +132,7 @@ useEffect(()=>{
   <div className="modal-content col-lg-12">
     <div className="modal-header">
     <h5 className="modal-title">Join World of Hyatt or sign in to your account to book.</h5>
-              <button type="button" className="btn-close" onClick={() => setModalShow(false)} aria-label="Close"></button>
-
+      <button type="button" className="btn-close" onClick={() => setModalShow(false)} aria-label="Close"></button>
     </div>
     <div className=" bodyofmodel ">
   {/* div 1 */}

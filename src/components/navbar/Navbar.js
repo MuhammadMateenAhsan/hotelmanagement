@@ -23,26 +23,20 @@ const Navbar = () => {
       <li className="nav-item ">
         <Link className="nav-link" to="/dining">Dining</Link>
       </li>
-      <li className="nav-item ">
+      <li className="nav-item">
         <Link className="nav-link" to="/specialevents">Special Events</Link>
       </li>
-      
-      {/* <li className="nav-item">
-        <Link className="nav-link " to="/admin">Admin</Link>
-      </li> */}
-      {/* <li className="nav-item">
-        <Link className="nav-link " to="/addrooms">Add</Link>
-      </li> */}
     </ul>
+    <div className='d-flex'>
     <div className='signuplogin'><Link to="/loginsignup">SignUp/LogIn</Link></div>
     <div className='adminlogin'><Link to="/sidebar">Admin</Link></div>
-    <div></div>
     <div class="dropdown">
   {/* <button class="dropbtn">Dropdown</button> */}
   <i class="fa fa-user fa-3x usericon" aria-hidden="true"></i>
   <div class="dropdown-content">
     <Link to="#" className='logoutbtn' onClick={clesrsession}>LogOut</Link>
   </div>
+</div>
 </div>
     
   </div>
